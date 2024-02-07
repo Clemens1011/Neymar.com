@@ -7,8 +7,8 @@
             font-family: Arial, sans-serif;
             background-image: url('https://as1.ftcdn.net/v2/jpg/02/13/83/96/1000_F_213839663_VrogNhrxyvdPwuHUgYRC5XQMdpRP9MKV.jpg');
             background-size: cover;
-            color: white; 
-            transition: background-image 0.5s ease; /* Add smooth transition effect */
+            color: white;
+            transition: background-image 0.5s ease;
         }
 
         .green-text {
@@ -46,14 +46,8 @@
     <script>
         function changeBackground() {
             var currentScrollPos = window.pageYOffset;
-
-            // Adjust the scroll position threshold according to your needs
-            if (currentScrollPos > 200) {
-                document.body.style.backgroundImage = "url('https://phantom-marca.unidadeditorial.es/dd1faf04f2215604a84e7552211e46c4/resize/828/f/jpg/assets/multimedia/imagenes/2022/12/15/16711022218501.jpg')";
-            } else {
-                document.body.style.backgroundImage = "url('https://as1.ftcdn.net/v2/jpg/02/13/83/96/1000_F_213839663_VrogNhrxyvdPwuHUgYRC5XQMdpRP9MKV.jpg')";
-            }
-        }
+            var newBackground = (currentScrollPos > 200) ? 'https://phantom-marca.unidadeditorial.es/dd1faf04f2215604a84e7552211e46c4/resize/828/f/jpg/assets/multimedia/imagenes/2022/12/15/16711022218501.jpg' : 'https://as1.ftcdn.net/v2/jpg/02/13/83/96/1000_F_213839663_VrogNhrxyvdPwuHUgYRC5XQMdpRP9MKV.jpg';
+            document.body.style.backgroundImage =https://phantom-marca.unidadeditorial.es/dd1faf04f2215604a84e7552211e46c4/resize/828/f/jpg/assets/multimedia/imagenes/2022/12/15/16711022218501.jpg }
     </script>
 </body>
 
