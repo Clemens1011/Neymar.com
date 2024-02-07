@@ -2,46 +2,59 @@
 <html>
 
 <head>
-    <title>Gencman24</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-image: url('https://as1.ftcdn.net/v2/jpg/02/13/83/96/1000_F_213839663_VrogNhrxyvdPwuHUgYRC5XQMdpRP9MKV.jpg');
+            background-size: cover;
+            color: white; 
+            transition: background-image 0.5s ease; /* Add smooth transition effect */
         }
 
-        h1 {
+        .green-text {
+            color: green;
+        }
+
+        .blue-text {
             color: blue;
         }
 
-        h2 {
-            color: red;
+        .yellow-text {
+            color: yellow;
         }
 
-        h3 {
-            color: blue;
+        ul {
+            list-style-type: none;
         }
-
-        p {
-            color: black;
-        }
-
-
     </style>
 </head>
 
-<body>
-    <h1>Gencman24</h1>
-    <p>Gencman ist der Superheld von Kufstein. Er beschützt die Stadt bei Tag und Nacht.</p>
-    <img src="https://tubestatic.orf.at/static/images/site/tube/20201147/unbenannt-1.5945544.jpg" alt="gencman24">
+<body onscroll="changeBackground()">
+    <p class="green-text">Neymar da Silva Santos jr ist der talentierteste Fußballspieler den die Welt jemals gesehen hat.</p>
+    <p class="blue-text">Selbst Ronaldinho kommt nicht an den brasilianischen offensiv Spieler ran.</p>
 
-    <h2>Heroic Feat Against 37 People</h2>
-    <h3>Unstoppable Force</h3>
-    <p>Gencman24 recently faced a formidable challenge, taking on a group of 37 evildoers. In an epic battle, he displayed unmatched strength, skill, and determination.</p>
+    <ul class="yellow-text">
+        <li>Football</li>
+        <li>Brasil</li>
+        <li>Fun</li>
+    </ul>
 
-    <h3>Triumph Over Adversity</h3>
-    <p>Against all odds, Gencman emerged victorious, single-handedly defeating each of the 37 opponents who dared to threaten the peace of Kufstein.</p>
+    <body class="green-text">Hello</body>
 
-    <h3>Protecting the City</h3>
-    <p>His commitment to protecting the city knows no bounds, and Gencman's heroic actions serve as a beacon of hope for the citizens of Kufstein.</p>
+    <a class="blue-text" href="gencman24.html">Link to Character page</a>
+
+    <script>
+        function changeBackground() {
+            var currentScrollPos = window.pageYOffset;
+
+            // Adjust the scroll position threshold according to your needs
+            if (currentScrollPos > 200) {
+                document.body.style.backgroundImage = "url('https://phantom-marca.unidadeditorial.es/dd1faf04f2215604a84e7552211e46c4/resize/828/f/jpg/assets/multimedia/imagenes/2022/12/15/16711022218501.jpg')";
+            } else {
+                document.body.style.backgroundImage = "url('https://as1.ftcdn.net/v2/jpg/02/13/83/96/1000_F_213839663_VrogNhrxyvdPwuHUgYRC5XQMdpRP9MKV.jpg')";
+            }
+        }
+    </script>
 </body>
 
 </html>
