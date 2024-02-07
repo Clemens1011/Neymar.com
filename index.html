@@ -8,6 +8,7 @@
             background-image: url('https://as1.ftcdn.net/v2/jpg/02/13/83/96/1000_F_213839663_VrogNhrxyvdPwuHUgYRC5XQMdpRP9MKV.jpg');
             background-size: cover;
             color: white; 
+            transition: background-image 0.5s ease; /* Add smooth transition effect */
         }
 
         .green-text {
@@ -28,7 +29,7 @@
     </style>
 </head>
 
-<body>
+<body onscroll="changeBackground()">
     <p class="green-text">Neymar da Silva Santos jr ist der talentierteste Fußballspieler den die Welt jemals gesehen hat.</p>
     <p class="blue-text">Selbst Ronaldinho kommt nicht an den brasilianischen offensiv Spieler ran.</p>
 
@@ -41,6 +42,19 @@
     <body class="green-text">Hello</body>
 
     <a class="blue-text" href="gencman24.html">Link to Character page</a>
+
+    <script>
+        function changeBackground() {
+            var currentScrollPos = window.pageYOffset;
+
+            // Adjust the scroll position threshold according to your needs
+            if (currentScrollPos > 200) {
+                document.body.style.backgroundImage = "url('https://phantom-marca.unidadeditorial.es/dd1faf04f2215604a84e7552211e46c4/resize/828/f/jpg/assets/multimedia/imagenes/2022/12/15/16711022218501.jpg')";
+            } else {
+                document.body.style.backgroundImage = "url('https://as1.ftcdn.net/v2/jpg/02/13/83/96/1000_F_213839663_VrogNhrxyvdPwuHUgYRC5XQMdpRP9MKV.jpg')";
+            }
+        }
+    </script>
 </body>
 
 </html>
