@@ -8,7 +8,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            transition: background-color 0.5s ease; /* Smooth transition for background color change */
+            transition: background-color 0.5s ease;
         }
 
         h1 {
@@ -26,12 +26,18 @@
         p {
             color: black;
         }
-
-        /* You can add more styles as needed */
     </style>
+    <script>
+        document.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+
+            // Change background color to black after scrolling down a certain distance (adjust as needed)
+            document.body.style.backgroundColor = scrollPosition > 100 ? 'black' : 'transparent';
+        });
+    </script>
 </head>
 
-<body onscroll="changeBackgroundColor()">
+<body>
     <h1>Gencman24</h1>
     <p>Gencman ist der Superheld von Kufstein. Er beschützt die Stadt bei Tag und Nacht.</p>
     <img src="https://tubestatic.orf.at/static/images/site/tube/20201147/unbenannt-1.5945544.jpg" alt="gencman24">
@@ -45,19 +51,6 @@
 
     <h3>Protecting the City</h3>
     <p>His commitment to protecting the city knows no bounds, and Gencman's heroic actions serve as a beacon of hope for the citizens of Kufstein.</p>
-
-    <script>
-         changeBackgroundColor() {
-             scrollPosition = window.scrollY;
-
-            // Change background color to black after scrolling down a certain distance (adjust as needed)
-            when (scrollPosition > 100) {
-                document.body.style.backgroundColor = 'black';
-            } {
-                document.body.style.backgroundColor = 'transparent';
-            }
-        }
-    </script>
 </body>
 
 </html>
