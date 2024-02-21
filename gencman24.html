@@ -9,6 +9,7 @@
             margin: 0;
             padding: 0;
             transition: background-color 0.5s ease;
+            color: white; 
         }
 
         h1 {
@@ -26,13 +27,20 @@
         p {
             color: black;
         }
+
+        .center-text {
+            position: absolute;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, 50%); 
+            font-size: 3em; 
+        }
     </style>
     <script>
         document.addEventListener('scroll', function () {
             var scrollPosition = window.scrollY;
 
-
-            document.body.style.backgroundColor = scrollPosition > 100 ? 'black' : 'transparent';
+            document.body.style.backgroundColor = scrollPosition > 100  'black' : 'transparent';
         });
     </script>
 </head>
@@ -51,6 +59,8 @@
 
     <h3>Protecting the City</h3>
     <p>His commitment to protecting the city knows no bounds, and Gencman's heroic actions serve as a beacon of hope for the citizens of Kufstein.</p>
+
+    <div class="center-text">NEYMAR</div>
 </body>
 
 </html>
