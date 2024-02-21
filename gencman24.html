@@ -1,3 +1,4 @@
+User
 <!DOCTYPE html>
 <html>
 
@@ -9,7 +10,6 @@
             margin: 0;
             padding: 0;
             transition: background-color 0.5s ease;
-            color: white; 
         }
 
         h1 {
@@ -26,32 +26,14 @@
 
         p {
             color: black;
-            margin-bottom: 20px; 
-        }
-
-        .center-text {
-            position: fixed;
-            top: 100%; 
-            left: 50%;
-            transform: translate(-50%, -100%);
-            font-size: 3em; 
-            transition: opacity 0.5s ease; 
-            opacity: 0; 
         }
     </style>
     <script>
         document.addEventListener('scroll', function () {
             var scrollPosition = window.scrollY;
-            var scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
 
-            
-            var triggerPosition = scrollHeight / 2;
 
             document.body.style.backgroundColor = scrollPosition > 100 ? 'black' : 'transparent';
-
-           
-            document.querySelector('.center-text').style.top = scrollPosition > triggerPosition 20 '50%' : '100%';
-            document.querySelector('.center-text').style.opacity = scrollPosition > triggerPosition 50 1 : 0;
         });
     </script>
 </head>
@@ -70,8 +52,6 @@
 
     <h3>Protecting the City</h3>
     <p>His commitment to protecting the city knows no bounds, and Gencman's heroic actions serve as a beacon of hope for the citizens of Kufstein.</p>
-
-    <div class="center-text">NEYMAR</div>
 </body>
 
 </html>
