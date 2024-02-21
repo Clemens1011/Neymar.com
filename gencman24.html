@@ -1,4 +1,3 @@
-User
 <!DOCTYPE html>
 <html>
 
@@ -27,11 +26,18 @@ User
         p {
             color: black;
         }
+
+        section {
+            height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
     <script>
         document.addEventListener('scroll', function () {
             var scrollPosition = window.scrollY;
-
 
             document.body.style.backgroundColor = scrollPosition > 100 ? 'black' : 'transparent';
         });
@@ -39,19 +45,27 @@ User
 </head>
 
 <body>
-    <h1>Gencman24</h1>
-    <p>Gencman ist der Superheld von Kufstein. Er beschützt die Stadt bei Tag und Nacht.</p>
-    <img src="https://tubestatic.orf.at/static/images/site/tube/20201147/unbenannt-1.5945544.jpg" alt="gencman24">
+    <section>
+        <h1>Gencman24</h1>
+        <p>Gencman ist der Superheld von Kufstein. Er beschützt die Stadt bei Tag und Nacht.</p>
+        <img src="https://tubestatic.orf.at/static/images/site/tube/20201147/unbenannt-1.5945544.jpg" alt="gencman24">
+    </section>
 
-    <h2>Heroic Feat Against 37 People</h2>
-    <h3>Unstoppable Force</h3>
-    <p>Gencman24 recently faced a formidable challenge, taking on a group of 37 evildoers. In an epic battle, he displayed unmatched strength, skill, and determination.</p>
+    <section>
+        <h2>Heroic Feat Against 37 People</h2>
+        <h3>Unstoppable Force</h3>
+        <p>Gencman24 recently faced a formidable challenge, taking on a group of 37 evildoers. In an epic battle, he displayed unmatched strength, skill, and determination.</p>
+    </section>
 
-    <h3>Triumph Over Adversity</h3>
-    <p>Against all odds, Gencman emerged victorious, single-handedly defeating each of the 37 opponents who dared to threaten the peace of Kufstein.</p>
+    <section>
+        <h3>Triumph Over Adversity</h3>
+        <p>Against all odds, Gencman emerged victorious, single-handedly defeating each of the 37 opponents who dared to threaten the peace of Kufstein.</p>
+    </section>
 
-    <h3>Protecting the City</h3>
-    <p>His commitment to protecting the city knows no bounds, and Gencman's heroic actions serve as a beacon of hope for the citizens of Kufstein.</p>
+    <section>
+        <h3>Protecting the City</h3>
+        <p>His commitment to protecting the city knows no bounds, and Gencman's heroic actions serve as a beacon of hope for the citizens of Kufstein.</p>
+    </section>
 </body>
 
 </html>
