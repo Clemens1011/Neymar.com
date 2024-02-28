@@ -7,8 +7,8 @@
             font-family: Arial, sans-serif;
             background-image: url('https://as1.ftcdn.net/v2/jpg/02/13/83/96/1000_F_213839663_VrogNhrxyvdPwuHUgYRC5XQMdpRP9MKV.jpg');
             background-size: cover;
-            color: white; 
-            font-size:18
+            color: white;
+            font-size: 18
         }
 
         .green-text {
@@ -26,22 +26,74 @@
         ul {
             list-style-type: none;
         }
+
+        /* Sidebar Styles */
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 160px; /* Same as the width of the sidenav */
+            font-size: 28px; /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <p class="green-text">Neymar da Silva Santos jr ist der talentierteste Fußballspieler den die Welt jemals gesehen hat.</p>
-    <p class="blue-text">Selbst Ronaldinho kommt nicht an den brasilianischen offensiv Spieler ran.</p>
+    
+    <div class="sidenav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+    </div>
 
-    <ul class="yellow-text">
-        <li>Football</li>
-        <li>Brasil</li>
-        <li>Fun</li>
-    </ul>
+    <!-- Main Content -->
+    <div class="main">
+        <p class="green-text">Neymar da Silva Santos jr ist der talentierteste Fußballspieler den die Welt jemals gesehen hat.</p>
+        <p class="blue-text">Selbst Ronaldinho kommt nicht an den brasilianischen offensiv Spieler ran.</p>
 
-    <body class="green-text">Hello</body>
+        <ul class="yellow-text">
+            <li>Football</li>
+            <li>Brasil</li>
+            <li>Fun</li>
+        </ul>
 
-    <a class="blue-text" href="gencman24.html">Link to Character page</a>
+        <body class="green-text">Hello</body>
+
+        <a class="blue-text" href="gencman24.html">Link to Character page</a>
+    </div>
 </body>
 
 </html>
